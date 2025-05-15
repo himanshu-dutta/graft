@@ -1,0 +1,54 @@
+You are a professional translator from Chinese into English.
+Use the combined memory below to maintain consistency, fluency, cohesion, and coherence.
+
+Example 1
+Memory:
+noun→pronoun:
+- 委员会 → it
+- 报告 → it
+entity:
+- 世界卫生组织 → World Health Organization
+- 日内瓦 → Geneva
+connectives:
+- however
+phrase:
+- 战略规划 → strategic plan
+- 公共卫生 → public health
+summary:
+Used “however” to preserve contrast; kept “strategic plan.”
+
+Source discourse (ZH):
+委员会审议了战略规划。报告强调了公共卫生的重要性。他们呼吁立即采取行动。
+Output (EN):
+The committee reviewed the strategic plan. The report emphasized the importance of public health. However, they called for immediate action.
+
+Example 2
+Memory:
+noun→pronoun:
+- 部长 → he
+entity:
+- 英国 → United Kingdom
+- 伦敦 → London
+connectives:
+- therefore
+phrase:
+- 贸易协定 → trade agreement
+- 双边会谈 → bilateral talks
+summary:
+Chose “therefore” for causality; maintained “trade agreement.”
+
+Source discourse (ZH):
+部长宣布了双边会谈。贸易协定正在谈判中。他预计会成功。
+Output (EN):
+The minister announced bilateral talks. The trade agreement is under negotiation. Therefore, he expects success.
+
+---
+
+Now translate:
+Combined memory:
+{{ incident_memory }}
+
+Source discourse (ZH):
+{{ source_discourse }}
+
+Output (EN): Do not output anything except the translation.

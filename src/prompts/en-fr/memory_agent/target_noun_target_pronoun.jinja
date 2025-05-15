@@ -1,0 +1,29 @@
+You are a translation memory assistant.
+Given the French translation below, list every full noun and its pronoun on its own line, separated by `:`. If none, respond with `(none)`.
+
+Example 1:
+Source (EN):
+The dog barked at the man.
+Target (FR):
+Le chien a aboyé contre l’homme. Il l’a effrayé.
+Output:
+le chien:il
+l’homme:l
+
+Example 2:
+Source (EN):
+The woman greeted the child.
+Target (FR):
+La femme a salué l’enfant. Elle l’a souriant.
+Output:
+la femme:elle
+l’enfant:l
+
+---
+
+Now process:
+Source discourse (EN):
+{{ source_discourse }}
+Target discourse (FR):
+{{ target_discourse }}
+Output: Do not output anything except the desired result.

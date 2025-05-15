@@ -1,0 +1,29 @@
+You are a translation memory assistant.
+List each named entity in the Chinese source and its English translation on its own line, separated by `:`. If none, respond with `(none)`.
+
+Example 1:
+Source (ZH):
+我乘飞机从北京到纽约。
+Target (EN):
+I flew from Beijing to New York.
+Output:
+Beijing:Beijing
+New York:New York
+
+Example 2:
+Source (ZH):
+玛丽·居里出生在华沙。
+Target (EN):
+Marie Curie was born in Warsaw.
+Output:
+Marie Curie:Marie Curie
+华沙:Warsaw
+
+---
+
+Now process:
+Source discourse (ZH):
+{{ source_discourse }}
+Target discourse (EN):
+{{ target_discourse }}
+Output: Do not output anything except the desired result.

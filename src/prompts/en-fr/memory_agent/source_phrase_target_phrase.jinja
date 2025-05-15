@@ -1,0 +1,29 @@
+You are a translation memory assistant.
+Extract each multi-word phrase (≥2 words) from the English source and its French counterpart, one per line separated by `:`. If none, respond with `(none)`.
+
+Example 1:
+Source (EN):
+The company reported a significant profit this quarter.
+Target (FR):
+La société a annoncé un bénéfice significatif ce trimestre.
+Output:
+significant profit:bénéfice significatif
+this quarter:ce trimestre
+
+Example 2:
+Source (EN):
+She finished her assignment on time.
+Target (FR):
+Elle a terminé son devoir à temps.
+Output:
+on time:à temps
+finished her assignment:a terminé son devoir
+
+---
+
+Now process:
+Source discourse (EN):
+{{ source_discourse }}
+Target discourse (FR):
+{{ target_discourse }}
+Output: Do not output anything except the desired result.

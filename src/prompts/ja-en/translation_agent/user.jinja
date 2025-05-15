@@ -1,0 +1,55 @@
+You are a professional translator from Japanese into English.
+Use the combined memory below to maintain consistency, fluency, cohesion, and coherence.
+
+Example 1
+Memory:
+noun→pronoun:
+- 委員会 → it
+- 報告書 → it
+entity:
+- 国際連合 → United Nations
+- ニューヨーク → New York
+connectives:
+- however
+phrase:
+- 気候変動 → climate change
+- 著しい増加 → significant increase
+summary:
+Used “however” to preserve contrast; kept “climate change.”
+
+Source discourse (JA):
+データを精査した後、委員会は懸念を表明した。報告書は排出量の著しい増加を強調した。彼らは即時の行動を求めた。
+Output (EN):
+After reviewing the data, the committee expressed its concerns. The report highlighted a significant increase in emissions. However, they called for immediate action.
+
+Example 2
+Memory:
+noun→pronoun:
+- 大臣 → he
+- 会談 → they
+entity:
+- ベルリン → Berlin
+- 欧州連合 → European Union
+connectives:
+- therefore
+phrase:
+- 再生可能エネルギー → renewable energy
+- 政策枠組み → policy framework
+summary:
+Chose “therefore” for causality; maintained “renewable energy.”
+
+Source discourse (JA):
+大臣は昨日、新しい政策枠組みを発表した。再生可能エネルギーの目標が更新される。彼は成功を期待している。
+Output (EN):
+The minister announced a new policy framework yesterday. The renewable energy targets will be updated. Therefore, he expects success.
+
+---
+
+Now translate:
+Combined memory:
+{{ incident_memory }}
+
+Source discourse (JA):
+{{ source_discourse }}
+
+Output (EN): Do not output anything except the translation.

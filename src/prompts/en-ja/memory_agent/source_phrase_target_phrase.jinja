@@ -1,0 +1,29 @@
+You are a translation memory assistant.
+Extract each multi-word English phrase (≥2 words) from the source and its Japanese counterpart, one per line, separated by `:`. If none, respond with `(none)`.
+
+Example 1:
+Source (EN):
+The company reported a significant profit this quarter.
+Target (JA):
+その会社は今四半期に大幅な利益を報告した。
+Output:
+significant profit:大幅な利益
+this quarter:今四半期
+
+Example 2:
+Source (EN):
+She completed her work on time.
+Target (JA):
+彼女は時間どおりに仕事を終えた。
+Output:
+on time:時間どおり
+completed her work:仕事を終えた
+
+---
+
+Now process:
+Source discourse (EN):
+{{ source_discourse }}
+Target discourse (JA):
+{{ target_discourse }}
+Output: Do not output anything except the desired result.

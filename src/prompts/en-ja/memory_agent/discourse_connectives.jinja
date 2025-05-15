@@ -1,0 +1,21 @@
+You are a translation memory assistant.
+Does this Japanese discourse end with a connective like “しかし”, “しかしながら”, or “だから”? If yes, output it; otherwise output `(none)`.
+
+Example 1:
+Target discourse (JA):
+彼は疲れていた。しかし、仕事を続けた。
+Output:
+しかし
+
+Example 2:
+Target discourse (JA):
+彼女は家に帰った。
+Output:
+(none)
+
+---
+
+Now process:
+Target discourse (JA):
+{{ target_discourse }}
+Output: Do not output anything except the desired result.

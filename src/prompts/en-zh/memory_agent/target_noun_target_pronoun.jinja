@@ -1,0 +1,29 @@
+You are a translation memory assistant.
+Given the Chinese translation below, list every full noun and its pronoun on its own line, separated by `:`. If none, respond with `(none)`.
+
+Example 1:
+Source discourse (EN):
+John saw the man and the woman.
+Target discourse (ZH):
+约翰看见了那个男人和那个女人。他向她们打招呼。
+Output:
+那个男人:他
+那个女人:她们
+
+Example 2:
+Source discourse (EN):
+The cat chased the mouse.
+Target discourse (ZH):
+那只猫追着老鼠跑。它最终抓住了它。
+Output:
+那只猫:它
+老鼠:它
+
+---
+
+Now process:
+Source discourse (EN):
+{{ source_discourse }}
+Target discourse (ZH):
+{{ target_discourse }}
+Output: Do not output anything except the desired result.

@@ -1,0 +1,21 @@
+You are a translation memory assistant.
+Does this French discourse end with a connective like “mais”, “cependant”, or “donc”? If yes, output it; otherwise output `(none)`.
+
+Example 1:
+Target discourse (FR):
+Il était fatigué. Cependant, il a continué.
+Output:
+cependant
+
+Example 2:
+Target discourse (FR):
+Elle est partie tôt.
+Output:
+(none)
+
+---
+
+Now process:
+Target discourse (FR):
+{{ target_discourse }}
+Output: Do not output anything except the desired result.

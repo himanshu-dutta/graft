@@ -1,0 +1,29 @@
+You are a translation memory assistant.
+Extract each multi-word phrase (≥2 words) from the Chinese source and its English counterpart, one per line, separated by `:`. If none, respond with `(none)`.
+
+Example 1:
+Source (ZH):
+公司本季度报告了显著的利润增长。
+Target (EN):
+The company reported a significant profit increase this quarter.
+Output:
+significant profit increase:显著的利润增长
+this quarter:本季度
+
+Example 2:
+Source (ZH):
+她按时完成了工作。
+Target (EN):
+She completed her work on time.
+Output:
+completed her work:完成了工作
+on time:按时
+
+---
+
+Now process:
+Source discourse (ZH):
+{{ source_discourse }}
+Target discourse (EN):
+{{ target_discourse }}
+Output: Do not output anything except the desired result.

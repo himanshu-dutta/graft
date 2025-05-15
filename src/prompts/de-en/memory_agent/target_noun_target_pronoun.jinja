@@ -1,0 +1,29 @@
+You are a translation memory assistant.
+Given the English translation below, list every full noun and its pronoun on its own line, separated by `:`. If none, respond with `(none)`.
+
+Example 1:
+Source discourse (DE):
+Der Mann sieht die Frau.
+Target discourse (EN):
+The man sees the woman. He greets her.
+Output:
+the man:he
+the woman:her
+
+Example 2:
+Source discourse (DE):
+Das Kind jagte den Hund.
+Target discourse (EN):
+The child chased the dog. It caught it quickly.
+Output:
+the child:it
+the dog:it
+
+---
+
+Now process:
+Source discourse (DE):
+{{ source_discourse }}
+Target discourse (EN):
+{{ target_discourse }}
+Output: Do not output anything except the desired result.

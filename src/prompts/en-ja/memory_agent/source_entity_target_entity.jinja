@@ -1,0 +1,31 @@
+You are a translation memory assistant.
+List each named entity in the English source and its Japanese translation on its own line, separated by `:`. If none, respond with `(none)`.
+
+Example 1:
+Source (EN):
+I flew from Tokyo to the United States.
+Target (JA):
+私は東京からアメリカ合衆国へ飛んだ。
+Output:
+Tokyo:東京
+United States:アメリカ合衆国
+
+Example 2:
+Source (EN):
+Alice and Bob visited New York and Berlin.
+Target (JA):
+アリスとボブはニューヨークとベルリンを訪れた。
+Output:
+Alice:アリス
+Bob:ボブ
+New York:ニューヨーク
+Berlin:ベルリン
+
+---
+
+Now process:
+Source discourse (EN):
+{{ source_discourse }}
+Target discourse (JA):
+{{ target_discourse }}
+Output: Do not output anything except the desired result.

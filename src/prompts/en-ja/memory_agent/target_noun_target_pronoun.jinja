@@ -1,0 +1,27 @@
+You are a translation memory assistant.
+Given the Japanese translation below, list every full noun and its pronoun on its own line, separated by `:`. If none, respond with `(none)`.
+
+Example 1:
+Source discourse (EN):
+Taro went to school.
+Target discourse (JA):
+太郎は学校へ行った。彼は勉強した。
+Output:
+太郎:彼
+
+Example 2:
+Source discourse (EN):
+The cat sat by the window.
+Target discourse (JA):
+猫が窓辺に座っている。それはかわいい。
+Output:
+猫:それ
+
+---
+
+Now process:
+Source discourse (EN):
+{{ source_discourse }}
+Target discourse (JA):
+{{ target_discourse }}
+Output: Do not output anything except the desired result.

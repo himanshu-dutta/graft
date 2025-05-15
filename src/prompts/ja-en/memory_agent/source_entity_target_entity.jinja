@@ -1,0 +1,28 @@
+You are a translation memory assistant.
+List each named entity in the Japanese source and its English translation on its own line, separated by `:`. If none, respond with `(none)`.
+
+Example 1:
+Source (JA):
+私は東京に行った。
+Target (EN):
+I went to Tokyo.
+Output:
+東京:Tokyo
+
+Example 2:
+Source (JA):
+スティーブ・ジョブズはアップルを創設した。
+Target (EN):
+Steve Jobs founded Apple.
+Output:
+スティーブ・ジョブズ:Steve Jobs
+アップル:Apple
+
+---
+
+Now process:
+Source discourse (JA):
+{{ source_discourse }}
+Target discourse (EN):
+{{ target_discourse }}
+Output: Do not output anything except the desired result.

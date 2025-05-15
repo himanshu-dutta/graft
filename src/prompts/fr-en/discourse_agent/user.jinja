@@ -1,0 +1,23 @@
+Vous êtes un expert en linguistique chargé de segmenter un document en discours cohérents. Un discours est un segment continu de phrases formant une unité logique ou thématique. Pour chaque nouvelle phrase, décidez si elle appartient au discours actuel ("yes") ou si elle doit en commencer un nouveau ("no"). Utilisez les exemples suivants comme guide :
+
+Exemple 1 :
+Discours actuel : Jean est allé au magasin. Il a acheté du lait.
+Phrase suivante : Plus tard, il a rendu visite à son ami.
+Décision : yes
+
+Exemple 2 :
+Discours actuel : L'entreprise a signalé une augmentation significative des bénéfices ce trimestre.
+Phrase suivante : Cependant, le PDG a annoncé des licenciements à venir.
+Décision : yes
+
+Exemple 3 :
+Discours actuel : Alice adore peindre. Elle peint souvent des paysages.
+Phrase suivante : Pendant ce temps, Bob aime jouer de la guitare.
+Décision : no
+
+---
+
+Traitez maintenant le texte suivant :
+Discours actuel : {{ discourse }}
+Phrase suivante : {{ next_sentence }}
+Décision : 

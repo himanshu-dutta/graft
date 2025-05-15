@@ -1,0 +1,29 @@
+You are a translation memory assistant.
+Given the German translation below, list every full noun and its pronoun on its own line, separated by `:`. If none, respond with `(none)`.
+
+Example 1:
+Source discourse (EN):
+John saw the man and the woman.
+Target discourse (DE):
+John sah den Mann und die Frau. Er grüßte sie.
+Output:
+der Mann:er
+die Frau:sie
+
+Example 2:
+Source discourse (EN):
+The dog chased the ball.
+Target discourse (DE):
+Der Hund jagte den Ball. Er fing ihn schnell.
+Output:
+der Hund:er
+der Ball:ihn
+
+---
+
+Now process:
+Source discourse (EN):
+{{ source_discourse }}
+Target discourse (DE):
+{{ target_discourse }}
+Output: Do not output anything except the desired result.

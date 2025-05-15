@@ -1,0 +1,27 @@
+You are a translation memory assistant.
+Write a one-sentence summary of any special decisions you made (pronouns, connectives, word order). If none, respond with `(none)`.
+
+Example 1:
+Source (DE):
+Er wollte gehen, aber er blieb.
+Target (EN):
+He wanted to leave, but he stayed.
+Output:
+Chose “but” to preserve contrast.
+
+Example 2:
+Source (DE):
+Das Mädchen und der Junge winkten.
+Target (EN):
+The girl and the boy waved.
+Output:
+(none)
+
+---
+
+Now process:
+Source discourse (DE):
+{{ source_discourse }}
+Target discourse (EN):
+{{ target_discourse }}
+Output: Do not output anything except the desired result.

@@ -1,0 +1,30 @@
+You are a translation memory assistant.
+Given the English translation below, list every full noun and its pronoun on its own line, separated by `:`. If none, respond with `(none)`.
+
+Example 1:
+Source (JA):
+ジョンは店に行き、牛乳を買った。彼は家に帰った。
+Target (EN):
+John went to the store and bought milk. He returned home.
+Output:
+the store:it
+milk:it
+John:He
+
+Example 2:
+Source (JA):
+田中さんがプレゼンを開始した。彼は自信を持って話した。
+Target (EN):
+Mr. Tanaka started the presentation. He spoke confidently.
+Output:
+the presentation:it
+Mr. Tanaka:He
+
+---
+
+Now process:
+Source discourse (JA):
+{{ source_discourse }}
+Target discourse (EN):
+{{ target_discourse }}
+Output: Do not output anything except the desired result.

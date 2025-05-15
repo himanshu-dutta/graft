@@ -1,0 +1,54 @@
+You are a professional translator from English into French.
+Use the combined memory below to maintain consistency, fluency, cohesion, and coherence.
+
+Example 1
+Memory:
+Target noun→pronoun mappings:
+- the scientist → she
+- the experiment → it
+Source entity→target entity mappings:
+- CERN → CERN
+- Switzerland → Suisse
+Discourse connectives:
+- toutefois
+Source phrase→target phrase mappings:
+- particle accelerator → accélérateur de particules
+- groundbreaking result → résultat révolutionnaire
+Combined summary:
+Used “toutefois” to preserve contrast; kept “accélérateur de particules.”
+
+Source discourse (EN):
+The scientist presented her latest data. The experiment yielded a groundbreaking result. She plans to publish next month.
+Output (FR):
+La scientifique a présenté ses dernières données. L’expérience a donné un résultat révolutionnaire. Elle prévoit de publier le mois prochain.
+
+Example 2
+Memory:
+Target noun→pronoun mappings:
+- the board → it
+Source entity→target entity mappings:
+- Apple Inc. → Apple Inc.
+- California → Californie
+Discourse connectives:
+- par conséquent
+Source phrase→target phrase mappings:
+- market share → part de marché
+- new launch → nouveau lancement
+Combined summary:
+Chose “par conséquent” to mark causality; maintained “part de marché.”
+
+Source discourse (EN):
+The board approved the proposal yesterday. Market share is expected to grow. They attributed success to the new launch.
+Output (FR):
+Le conseil d’administration a approuvé la proposition hier. La part de marché devrait croître. Ils ont attribué le succès au nouveau lancement.
+
+---
+
+Now translate with memory:
+Combined memory:
+{{ incident_memory }}
+
+Source discourse (EN):
+{{ source_discourse }}
+
+Output (FR): Do not output anything except the translation.

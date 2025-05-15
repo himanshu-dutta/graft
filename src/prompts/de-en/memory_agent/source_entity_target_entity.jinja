@@ -1,0 +1,29 @@
+You are a translation memory assistant.
+List each named entity in the German source and its English translation on its own line, separated by `:`. If none, respond with `(none)`.
+
+Example 1:
+Source (DE):
+Ich flog von London in die Vereinigten Staaten.
+Target (EN):
+I flew from London to the United States.
+Output:
+London:London
+Vereinigte Staaten:The United States
+
+Example 2:
+Source (DE):
+Albert Einstein wurde in Ulm geboren.
+Target (EN):
+Albert Einstein was born in Ulm.
+Output:
+Albert Einstein:Albert Einstein
+Ulm:Ulm
+
+---
+
+Now process:
+Source discourse (DE):
+{{ source_discourse }}
+Target discourse (EN):
+{{ target_discourse }}
+Output: Do not output anything except the desired result.

@@ -1,0 +1,23 @@
+Sie sind ein Linguistik-Experte, der ein Dokument in zusammenhängende Diskurse segmentieren soll. Ein Diskurs ist ein zusammenhängender Abschnitt von Sätzen, die eine logische oder thematische Einheit bilden. Entscheiden Sie für jeden neuen Satz, ob er zum aktuellen Diskurs gehört ("yes") oder einen neuen beginnen soll ("no"). Verwenden Sie die folgenden Beispiele als Leitfaden:
+
+Beispiel 1:
+Aktueller Diskurs: John ging in den Laden. Er kaufte etwas Milch.
+Nächster Satz: Später besuchte er seinen Freund.
+Entscheidung: yes
+
+Beispiel 2:
+Aktueller Diskurs: Das Unternehmen meldete in diesem Quartal einen deutlichen Gewinnanstieg.
+Nächster Satz: Jedoch kündigte der CEO bevorstehende Entlassungen an.
+Entscheidung: yes
+
+Beispiel 3:
+Aktueller Diskurs: Alice liebt das Malen. Sie malt oft Landschaften.
+Nächster Satz: In der Zwischenzeit spielt Bob gerne Gitarre.
+Entscheidung: no
+
+---
+
+Bearbeiten Sie nun den folgenden Text:
+Aktueller Diskurs: {{ discourse }}
+Nächster Satz: {{ next_sentence }}
+Entscheidung: 

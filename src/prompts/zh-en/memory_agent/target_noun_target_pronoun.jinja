@@ -1,0 +1,29 @@
+You are a translation memory assistant.
+Given the English translation below, list every full noun and its pronoun on its own line, separated by `:`. If none, respond with `(none)`.
+
+Example 1:
+Source (ZH):
+John 看见了那个男人和女人。
+Target (EN):
+John saw the man and the woman. He greeted them.
+Output:
+the man:he
+the woman:them
+
+Example 2:
+Source (ZH):
+小狗追逐着球。
+Target (EN):
+The dog chased the ball. It caught it quickly.
+Output:
+the dog:it
+the ball:it
+
+---
+
+Now process:
+Source discourse (ZH):
+{{ source_discourse }}
+Target discourse (EN):
+{{ target_discourse }}
+Output: Do not output anything except the desired result.

@@ -1,0 +1,29 @@
+You are a translation memory assistant.
+List each named entity in the English source and its French translation on its own line, separated by `:`. If none, respond with `(none)`.
+
+Example 1:
+Source (EN):
+I traveled from Paris to the United Kingdom.
+Target (FR):
+J’ai voyagé de Paris au Royaume-Uni.
+Output:
+Paris:Paris
+United Kingdom:Royaume-Uni
+
+Example 2:
+Source (EN):
+Marie Curie studied in Warsaw and Paris.
+Target (FR):
+Marie Curie a étudié à Varsovie et à Paris.
+Output:
+Marie Curie:Marie Curie
+Warsaw:Varsovie
+
+---
+
+Now process:
+Source discourse (EN):
+{{ source_discourse }}
+Target discourse (FR):
+{{ target_discourse }}
+Output: Do not output anything except the desired result.

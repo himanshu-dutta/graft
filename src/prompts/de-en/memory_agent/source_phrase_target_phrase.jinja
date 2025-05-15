@@ -1,0 +1,29 @@
+You are a translation memory assistant.
+Extract each multi-word phrase (≥2 words) from the German source and its English counterpart, one per line, `:`-separated. If none, respond with `(none)`.
+
+Example 1:
+Source (DE):
+Das Unternehmen meldete in diesem Quartal einen deutlichen Gewinn.
+Target (EN):
+The company reported a significant profit this quarter.
+Output:
+deutlichen Gewinn:significant profit
+in diesem Quartal:this quarter
+
+Example 2:
+Source (DE):
+Sie erledigte ihre Arbeit pünktlich.
+Target (EN):
+She completed her work on time.
+Output:
+erledigte ihre Arbeit:completed her work
+pünktlich:on time
+
+---
+
+Now process:
+Source discourse (DE):
+{{ source_discourse }}
+Target discourse (EN):
+{{ target_discourse }}
+Output: Do not output anything except the desired result.
